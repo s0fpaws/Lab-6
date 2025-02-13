@@ -32,10 +32,8 @@ public class CreateScene: MonoBehaviour
             float sx = UnityEngine.Random.Range(.5f, 1.5f);
             float sy = UnityEngine.Random.Range(.5f, 1.5f);
             float sz = UnityEngine.Random.Range(.5f, 1.5f);
-            float r = UnityEngine.Random.Range(0f, 0f);
             float g = UnityEngine.Random.Range(0f, 1f);
-            float b = UnityEngine.Random.Range(0f, 0f);
-            Color newColor = new Color(r, g, b);
+            Color newColor = new Color(0f, g, 0f);
             GameObject cylinder = GameObject.CreatePrimitive(PrimitiveType.Cylinder);
             Renderer renderer = cylinder.GetComponent<Renderer>();
             renderer.material = new Material(Shader.Find("Standard"));
